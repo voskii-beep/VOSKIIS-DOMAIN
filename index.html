@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-      <style>
-        body { margin: 20px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      background-color: #f5f0e8;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #222222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin-right: 12px;
+      text-decoration: none;
+      color: #444;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      color: brown;
+      font-size: 25px;
+      font-style: italic;
+      background-color: black;
+      padding: 4px 8px;
+    }
+
+    dl dt {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <a href="index.html">go to homepage</a>
-    <a href="about.html"> ||about us</a>
-    <a href="contact.html"> ||contact us</a>
-    <a href="services.html"> ||services</a>
-    <a href="team.html"> ||our team</a>
-    <a href="blog.html"> ||blog</a>
-    <a href="faq.html"> ||faq</a>
 
-    <h1>Welcome to Our Website</h1>
-    <h2>Who We Are</h2>
-    <p style="color:brown; font-size: 25px; font-style:italic;background-color:black">The voskiis domain website where we prove that saturo gojo is still a fraud.</p>
-    <h2>What We Offer</h2>
-    <p>Anything you need from anime updates to clear insights about anime.</p>
-    <dt>python</dt>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Our Team</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <h1>Welcome to Our Website</h1>
+
+  <h2>Who We Are</h2>
+  <p class="highlight">The voskiis domain website where we prove that saturo gojo is still a fraud.</p>
+
+  <h2>What We Offer</h2>
+  <p>Anything you need from anime updates to clear insights about anime.</p>
+
+  <dl>
+    <dt>Python</dt>
     <dd>&#169; Please sign up — it is free.</dd>
+  </dl>
+
 </body>
 </html>
