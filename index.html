@@ -3,68 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Home — Voskiis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      background-color: #f5f0e8;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #222222;
-      margin: 0;
-      padding: 20px;
+      background-color: #1a1814;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: #e8e0d0;
+      min-height: 100vh;
     }
 
     nav {
-      margin-bottom: 20px;
+      border-bottom: 1px solid #3a3530;
+      padding: 18px 48px;
+      display: flex;
+      gap: 32px;
+      align-items: center;
     }
 
     nav a {
-      margin-right: 12px;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #a89880;
       text-decoration: none;
-      color: #444;
+      transition: color 0.2s;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover { color: #e8e0d0; }
+    nav a.active {
+      color: #e8e0d0;
+      border-bottom: 1px solid #c8a96e;
+      padding-bottom: 2px;
     }
 
-    .highlight {
-      color: brown;
-      font-size: 25px;
+    .hero {
+      padding: 80px 48px 48px;
+      max-width: 820px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c8a96e;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 1.15;
+      color: #f0e8d8;
+      margin-bottom: 40px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: #c8a96e;
+      margin: 0 48px 48px;
+    }
+
+    .content {
+      padding: 0 48px;
+      max-width: 820px;
+    }
+
+    .section { margin-bottom: 48px; }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #f0e8d8;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #b0a898;
+    }
+
+    .highlight-block {
+      border-left: 2px solid #c8a96e;
+      padding: 16px 24px;
+      background: #22201c;
+      font-family: 'Playfair Display', serif;
       font-style: italic;
-      background-color: black;
-      padding: 4px 8px;
+      font-size: 17px;
+      color: #d8c8a8;
+      line-height: 1.7;
     }
 
-    dl dt {
-      font-weight: bold;
+    .footer-note {
+      border-top: 1px solid #3a3530;
+      margin: 48px 48px 0;
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
+
+    .tag {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c8a96e;
+      border: 1px solid #3a3530;
+      padding: 4px 12px;
+    }
+
+    .footer-note p { font-size: 13px; color: #706860; }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
     <a href="services.html">Services</a>
-    <a href="team.html">Our Team</a>
+    <a href="team.html">Team</a>
     <a href="blog.html">Blog</a>
     <a href="faq.html">FAQ</a>
   </nav>
 
-  <h1>Welcome to Our Website</h1>
+  <div class="hero">
+    <p class="eyebrow">Voskiis Domain</p>
+    <h1>Welcome to Our Website</h1>
+  </div>
 
-  <h2>Who We Are</h2>
-  <p class="highlight">The voskiis domain website where we prove that saturo gojo is still a fraud.</p>
+  <div class="divider"></div>
 
-  <h2>What We Offer</h2>
-  <p>Anything you need from anime updates to clear insights about anime.</p>
+  <div class="content">
+    <div class="section">
+      <h2>Who We Are</h2>
+      <div class="highlight-block">
+        The voskiis domain — where we prove that Satoru Gojo is still a fraud.
+      </div>
+    </div>
 
-  <dl>
-    <dt>Python</dt>
-    <dd>&#169; Please sign up — it is free.</dd>
-  </dl>
+    <div class="section">
+      <h2>What We Offer</h2>
+      <p>Anything you need — from the latest anime updates to clear, in-depth insights about the anime world.</p>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <span class="tag">Python</span>
+    <p>&#169; Please sign up — it is free.</p>
+  </div>
 
 </body>
 </html>
